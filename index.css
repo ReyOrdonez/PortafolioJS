@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    background-color: rgb(100, 100, 100);
+}
+nav{
+    grid-column: 3/5;
+    background-color: gray;
+}
+nav a {
+    font-family: Quicksand;
+    font-size: 35px;
+}
