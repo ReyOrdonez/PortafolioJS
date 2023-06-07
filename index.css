@@ -5,13 +5,29 @@ body{
 #grid{
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    background-color: rgb(100, 100, 100);
 }
 nav{
     grid-column: 3/5;
-    background-color: gray;
 }
 nav a {
     font-family: Quicksand;
-    font-size: 35px;
+    font-size: 30px;
+}
+#links{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    text-align: center;
+}
+#line{
+    min-height: 3px;
+    background-color: rgb(240, 36, 94);
+    margin-left: 100%;
+    margin-right: 100%;
+}
+#links a:hover #line{
+    margin-left: 20%;
+    margin-right: 20%;
+    transition-duration: 1000ms;
+    transition-property: margin-left;
+    transition-property: margin-right;
 }
